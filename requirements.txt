@@ -36,7 +36,6 @@ matplotlib==3.3.4
 msgpack==1.0.2
 networkx==2.5
 noise==1.2.2
-numpy==1.19.5
 openpyxl==3.0.7
 packaging==20.9
 Pillow==8.1.2
@@ -60,7 +59,6 @@ PyWavelets==1.1.1
 qt5-applications==5.15.2.2.1
 qt5-tools==5.15.2.1.0.1
 requests==2.25.1
-scikit-image==0.17.2
 scipy==1.5.4
 six==1.15.0
 sqlparse==0.4.1
