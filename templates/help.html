@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block head %}
+{% endblock head %}
+{% block body %}
+<section class="hero-7 bg-center position-relative" style="background-image: url(static/help.jpg);" id="home">
+<div class="bg-overlay bg-dark"></div>
+<div class="container">
+<div class="row align-items-center">
+	<div class="col-lg-6">
+		<h1 class="font-weight-semibold mb-4 text-white hero-7-title">We Are Very Happy That You Want To Help In This Pandemic
+		</h1>
+		<p class="mb-5 text-white-70">Fill The Details For Which Category You Want to Donate And Be the part of those Loyal people Who Care For there Contry.</p>
+	</div>
+	<div class="col-xl-4 col-lg-5 ms-lg-auto my-2">
+		<div class="mx-auto rounded bg-white mt-5 mt-lg-0 p-4">
+			<div class="mb-4"></div>
+			<form method="post" action="/help">
+				{% csrf_token %}
+				<form class="registration-form">
+					<div class="form-group mb-4">
+						<label for="name" class="text-muted font-size-15 mb-2">Your
+						Name*</label>
+						<input type="text" class="form-control" id="name" name="name" placeholder="">
+					</div>
+					<div class="form-group mb-4">
+						<label for="city" class="text-muted font-size-15 mb-2">Your City*</label>
+						<input type="text" class="form-control" id="city" name="city" placeholder="">
+					</div>
+					<div class="form-group mb-4">
+						<label for="state" class="text-muted font-size-15 mb-2">Your State*</label>
+						<input type="text" class="form-control" id="state" name="state" placeholder="">
+					</div>
+
+					<div class="form-group mb-4">
+						<label for="phone" class="text-muted font-size-15 mb-2">Phone No</label>
+						<input type="phone" class="form-control" id="phone" name="phone" placeholder="">
+					</div>
+					<div>
+						<label for="Title" class="text-muted font-size-15 mb-2">Categories You Want To Help In</label>
+					</div>
+				    <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="plasma" name="plasma">
+                    <label class="form-check-label" for="plasma">Plasma Donation</label>
+                    </div>
+
+					<div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="bed" name="bed">
+                    <label class="form-check-label" for="bed">Quarintine Bed</label>
+                    </div>
+
+					<div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="oxygen" name="oxygen">
+                    <label class="form-check-label" for="oxygen">Oxygen Cylinders</label>
+                    </div>
+
+					<div class="d-grid my-3">
+						<button type="submit" class="btn btn-primary btn-sm text-uppercase">Submit</button>
+					</div>
+
+				</form>
+			</form>
+		</div>
+	</div>
+</div>
+</div>
+</section>
+{% endblock body %}
+{% block title %}
+help others
+{% endblock title %}

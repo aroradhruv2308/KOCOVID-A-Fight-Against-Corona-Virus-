@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% block body %}
+
+<div class="container my-4">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<div class="container">
+  <h2>Your Results</h2>
+  <p>Here are the people who can help you Can Search here For The City, Contry, Name, Phone Number</p>  
+  <input class="form-control" id="myInput" type="text" placeholder="Search..">
+  <br>
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>State</th>
+        <th>City</th>
+        <th>Contact</th>
+        <th>Helpingin</th>
+     </tr>
+    </thead>
+    <tbody id="myTable">
+    {% for i in plasmas %}
+    		
+      <tr>
+
+     	<td> {{i.name}}</td>
+     	<td> {{i.state}}</td>
+     	<td> {{i.city}}</td>
+     	<td> {{i.phone}}</td>
+     	<td> {{"Plasma"}}</td>
+
+
+
+      </tr>		
+
+    {% endfor %}	
+    {% for i in oxygens %}
+    		
+      <tr>
+
+     	<td> {{i.name}}</td>
+     	<td> {{i.state}}</td>
+     	<td> {{i.city}}</td>
+     	<td> {{i.phone}}</td>
+     	<td> {{"Oxygen"}}</td>
+
+
+
+      </tr>		
+
+    {% endfor %}	
+    {% for i in beds %}
+    		
+      <tr>
+
+     	<td> {{i.name}}</td>
+     	<td> {{i.state}}</td>
+     	<td> {{i.city}}</td>
+     	<td> {{i.phone}}</td>
+     	<td> {{"Bed"}}</td>
+
+
+
+      </tr>		
+
+    {% endfor %}	
+     
+     	
+    </tbody>
+  </table>
+  </div>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+</div>
+{% endblock body %}
+
+{% block title %}
+Helping Users
+{% endblock title %}
