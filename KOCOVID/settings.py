@@ -80,8 +80,12 @@ WSGI_APPLICATION = 'KOCOVID.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'da5rkm3iiodmml',
+        'HOST': 'ec2-18-215-111-67.compute-1.amazonaws.com',
+        'PORT': '5432',
+        'USER': 'rtkjyacesaahal',
+        'PASSWORD': 'e5e4ea52cb7b0cd2f10cb26c5dd82a4bacb9ccd5f32b911e919595932e458126'
     }
 }
 
