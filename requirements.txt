@@ -64,7 +64,6 @@ qt5-applications==5.15.2.2.1
 qt5-tools==5.15.2.1.0.1
 requests==2.25.1
 rsa==4.7.2
-scikit-image==0.17.2
 scipy==1.5.4
 six==1.15.0
 sqlparse==0.4.1
