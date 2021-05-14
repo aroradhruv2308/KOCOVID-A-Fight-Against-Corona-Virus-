@@ -107,7 +107,7 @@ SECRET_KEY = 'django-insecure-w0kt^l^6_h8q#$9w=u%qz$^wt=8c)*)@7-iglw*h&%oj#rp61y
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-ALLOWED_HOSTS = ['localhost','0.0.0.0','https://kocovid.herokuapp.com/']
+ALLOWED_HOSTS = ['*']
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
