@@ -76,11 +76,11 @@ WSGI_APPLICATION = 'KOCOVID.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'da5rkm3iiodmml',
-        'HOST': 'ec2-18-215-111-67.compute-1.amazonaws.com',
+        'NAME': 'degij21i7l57g2',
+        'HOST': 'ec2-34-202-54-225.compute-1.amazonaws.com',
         'PORT': '5432',
-        'USER': 'rtkjyacesaahal',
-        'PASSWORD': 'e5e4ea52cb7b0cd2f10cb26c5dd82a4bacb9ccd5f32b911e919595932e458126'
+        'USER': 'rrjqtdfsyipdip',
+        'PASSWORD': 'fdfbf1f850bbf1b1fbf4c4ffa90cc6f5fe3979ff759df157b6bf610c5f2a34ec'
     }
 }
 
@@ -117,6 +117,7 @@ if a == "dhruvarora-HP-250-G7-Notebook-PC":
     DEBUG = TEMPLATE_DEBUG = True
 else:
     DEBUG = TEMPLATE_DEBUG = False
+# DEBUG = True
 
 
 
